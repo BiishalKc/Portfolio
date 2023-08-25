@@ -180,7 +180,7 @@ header{
 }
 .boxes{
     display :flex;
-    font-size: 20px;
+    font-size: 18px;
 }
 .container1 h4{
     font-size: 25px;
@@ -253,7 +253,7 @@ header{
 }
 .form3 input{
     width: 160%;
-    padding: 0 5% 20%;
+    padding: 0 5% 20% 2%;
     border-radius: 5px ;
     border-style: solid;
 }
