@@ -4,13 +4,13 @@
 .wrapper-class{
     padding: 0 5%;
 }
-
 .mid{
     padding: 30px 0;
 }
 .bottom{
     padding-bottom: 40px;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -18,7 +18,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
     /* Header */
+
 nav{
     display: flex;
     align-items: center;
@@ -64,7 +66,9 @@ input[type="checkbox"]{
     display: none;
 }
 
+
     /* Home */
+
 #home{
     display: flex;
     align-items: center;
@@ -74,15 +78,15 @@ input[type="checkbox"]{
     background-repeat: no-repeat;
     height: 100vh;
 }
-.text{
+.home-content{
     font-size: 35px;
     align-items: center;
     justify-content: center;
 }
-.text strong{
+.home-content strong{
     color: crimson;
 }
-.btn{
+.home-btn{
     background-color: crimson;
     color: white;
     margin-top: 30px;
@@ -95,26 +99,28 @@ input[type="checkbox"]{
     border-radius: 6px;
     transition: all 0.3s ease;
 }
-.btn:hover{
+.home-btn:hover{
     background: transparent;
     color: crimson;
 }
- .heading{
+
+
+    /* About */
+
+ .about-heading{
     text-align: center;
 }
-.heading h1{
+.about-heading h1{
     font-size: 40px;
 }
-.heading p{
+.about-heading p{
     font-size: 25px;
     color: crimson;
 }
-
-    /* About */
 .about-me{
     display: flex;
 }
-.image{
+.about-me-image{
   flex: 1;
 }
 .about-me-text{
@@ -132,7 +138,7 @@ input[type="checkbox"]{
     padding-top: 20px;
 }
 
-.btn1{
+.about-btn{
     background-color: crimson;
     color: white;
     margin-top: 30px;
@@ -145,140 +151,142 @@ input[type="checkbox"]{
     border-radius: 6px;
     transition: all 0.3s ease;
 }
-.btn1:hover{
+.about-btn:hover{
     background: transparent;
     color: crimson;
 }
-    /* Skills */
-#skills{
+
+
+    /* Services */
+
+#services{
     background-color: #111;
     color: white;
 }
-.headingg{
+#services i{
+  font-size:4rem ;
+  padding: 10% 0 20px 40%;
+}
+.services-heading{
     text-align: center;
     font-size: 30px;
 }
 
-.boxxx{
+.services-content{
     display: flex;
     padding: 0 4%;
 }
-.boxx h2{
+.services-box h2{
     text-align: center;
     padding-bottom: 5px;
 }
-
-.boxx{
+.services-box{
    margin: 10px;
    padding: 15px;
    background-color: #222;
    border-radius: 5px;
    transition: all 0.3s ease;
 }
-.boxx i {
+.services-box i {
     color: white;
 }
-.boxx:hover{
+.services-box:hover{
     background-color: crimson;
     color: black;
 }
 
- #skills i{
-   font-size:4rem ;
-   padding: 10% 0 20px 40%;
-}
+
+
     /* Contacts */
+
 #contacts i {
     color: crimson;
 }
-.heading1 h2{
+.contacts-heading h2{
     font-size: 40px;
 }
-.heading1 p {
+.contacts-heading p {
     font-size: 25px;
     color: crimson;
 }
-.heading1{
+.contacts-heading{
     text-align: center;
 }
-.boxes{
+.contacts-column{
     display :flex;
     font-size: 18px;
     align-items: center;
     justify-content: space-between;
 }
-.container1 h4{
+.first-row h4{
     font-size: 25px;
 }
-.container1{
+.first-row{
     align-items: center;
     padding: 10px;
 }
-.container2{
+.second-row{
     display: flex;
     padding: 3%;
 }
-.container2 i{
+.second-row i{
     padding-top: 3%;
     font-size: 25px;
 }
-.container3{
+.third-row{
     display: flex;
     padding: 3%;
 }
-.container3 i{
+.third-row i{
     padding-top: 3%;
     font-size: 25px;
 }
-.container4{
+.fourth-row{
     display: flex;
     padding: 3%;
 }
-.container4 i{
+.fourth-row i{
     padding-top: 3%;
     font-size: 25px;
 }
-.cont{
-    padding-left: 6%;
-}
-.container5{
+.fifth-row{
     font-size: 30px;
+}
+.row-content{
+    padding-left: 6%;
 }
 .form{
     width: 50%;
 }
 .form h4{
     font-size: 25px;
-}
-.form h4{
     padding-bottom: 2%;
 }
-.form1 input{
+.first-form input{
     width: 100%;
     padding: 2%;
     border-radius: 5px ;
     border-style: solid;
 }
-.form2 input{
+.first-form{
+    padding-bottom: 30px;
+}
+.second-form input{
     width: 100%;
     padding: 2%;
     border-radius: 5px ;
     border-style: solid;
 }
-.form3 input{
+.second-form{
+    padding-bottom: 30px;
+}
+.third-form input{
     width: 100%;
     padding: 0 5% 10% 2%;
     border-radius: 5px ;
     border-style: solid;
 }
-.form1{
-    padding-bottom: 30px;
-}
-.form2{
-    padding-bottom: 30px;
-}
-
-.btn2{
+.contacts-btn{
     background-color: crimson;
     color: white;
     width: 240px;
@@ -292,11 +300,14 @@ input[type="checkbox"]{
     border-radius: 6px;
     transition: all 0.3s ease;
 }
-.btn2:hover{
+.contacts-btn:hover{
     background: transparent;
     color: crimson;
 }
+
+
     /* Footer */
+
 footer{
     background-color: #111;
     display: flex;
