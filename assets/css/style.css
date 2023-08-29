@@ -1,62 +1,86 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Poppins:wght@200;300&family=Ubuntu:wght@300&display=swap');
 
+.wrapper-class{
+    padding: 0 5%;
+}
 
-
+.mid{
+    padding: 30px 0;
+}
+.bottom{
+    padding-bottom: 40px;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-header{
-    background-color: rgb(248, 40, 82);
-    padding: 3px;
-    color: whitesmoke;
-}
-.navbar{
+
+    /* Header */
+nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 15px;
-}
-.navbar .logo{
-    margin-left: 70px;
-    font-size: 22px;
-}
-.menu a{
-    text-decoration: none;
-    padding-right: 70px;
+    flex-wrap: wrap;
+    height: 70px;
+    width: 100%;
+    padding: 0 5%;
+    background-color: #111;
     color: whitesmoke;
-    font-weight: 700;
-    transition: 0.3s;
 }
-.menu a:hover,
-.menu a.active {
+nav .logo{
+    font-size: 35px;
+    font-weight: 700;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+} 
+nav ul li{
+    margin: 0 5px;
+}
+nav ul li a{
     color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 8px 15px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover {
+    color: crimson;
+}
+nav .menu-btn i{
+    font-size: 25px;
+    display: none;
+    cursor: pointer;
+}
+input[type="checkbox"]{
+    display: none;
 }
 
+    /* Home */
 #home{
     display: flex;
     align-items: center;
-    padding: 50px;
-    background-image: url(background.jpg);
+    background-image: url('../image/background.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 100vh;
 }
 .text{
-    margin-top: 5%;
     font-size: 35px;
-    padding: 80px;
+    align-items: center;
+    justify-content: center;
 }
 .text strong{
     color: crimson;
-}
-.img{
-    margin-top: 5%;
-    padding-left: 5%;
 }
 .btn{
     background-color: crimson;
@@ -69,40 +93,45 @@ header{
     letter-spacing: 2px;
     outline: none;
     border-radius: 6px;
-    transform: 0.3s;
+    transition: all 0.3s ease;
 }
 .btn:hover{
     background: transparent;
     color: crimson;
 }
-#about{
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
  .heading{
     text-align: center;
-    font-size: 20px;
 }
 .heading h1{
-    font-size: 50px;
+    font-size: 40px;
 }
 .heading p{
-    font-size: 30px;
+    font-size: 25px;
+    color: crimson;
 }
+
+    /* About */
 .about-me{
     display: flex;
 }
 .image{
-    padding: 0 80px 0 8%; 
+  flex: 1;
 }
 .about-me-text{
-    padding: 5% 10% 0 0;
-    font-size: 20px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .about-me-text h5{
-   padding-bottom: 20px;
-   font-size: 20px;
+    font-size: 20px;
 }
+.about-me-text p{
+    font-size: 20px;
+    text-align: justify;
+    padding-top: 20px;
+}
+
 .btn1{
     background-color: crimson;
     color: white;
@@ -114,28 +143,25 @@ header{
     cursor: pointer;
     outline: none;
     border-radius: 6px;
-    transform: 0.3s;
+    transition: all 0.3s ease;
 }
 .btn1:hover{
     background: transparent;
     color: crimson;
 }
+    /* Skills */
 #skills{
-    padding: 50px 0 50px 50px;
     background-color: #111;
     color: white;
 }
 .headingg{
     text-align: center;
-    font-size: 20px;
-    padding-bottom: 5%;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .boxxx{
     display: flex;
-    margin: 20px;
-    padding: 40px;
+    padding: 0 4%;
 }
 .boxx h2{
     text-align: center;
@@ -147,7 +173,7 @@ header{
    padding: 15px;
    background-color: #222;
    border-radius: 5px;
-   transition: .3s;
+   transition: all 0.3s ease;
 }
 .boxx i {
     color: white;
@@ -161,49 +187,39 @@ header{
    font-size:4rem ;
    padding: 10% 0 20px 40%;
 }
-#contacts{
-    padding: 50px 0;
-}
+    /* Contacts */
 #contacts i {
     color: crimson;
 }
 .heading1 h2{
-    font-size: 50px;
+    font-size: 40px;
 }
 .heading1 p {
-    font-size: 30px;
+    font-size: 25px;
+    color: crimson;
 }
 .heading1{
     text-align: center;
-    font-size: 20px;
-    padding-bottom: 5%;
 }
 .boxes{
     display :flex;
     font-size: 18px;
+    align-items: center;
+    justify-content: space-between;
 }
 .container1 h4{
     font-size: 25px;
 }
-.containerr{
-    margin-left: 8%;
-}
 .container1{
     align-items: center;
     padding: 10px;
-}
-.container1 p{
-    padding: 1%;
-}
-.container1 h4{
-    padding-left: 1%;
 }
 .container2{
     display: flex;
     padding: 3%;
 }
 .container2 i{
-    padding-top: 4%;
+    padding-top: 3%;
     font-size: 25px;
 }
 .container3{
@@ -211,7 +227,7 @@ header{
     padding: 3%;
 }
 .container3 i{
-    padding-top: 4%;
+    padding-top: 3%;
     font-size: 25px;
 }
 .container4{
@@ -219,41 +235,39 @@ header{
     padding: 3%;
 }
 .container4 i{
-    padding-top: 4%;
+    padding-top: 3%;
     font-size: 25px;
 }
 .cont{
-    padding-left: 8%;
+    padding-left: 6%;
 }
 .container5{
     font-size: 30px;
-    padding: 3% 0 0 5%;
 }
 .form{
-    width: 20%;
-    margin-left: 5%;
+    width: 50%;
 }
 .form h4{
     font-size: 25px;
 }
 .form h4{
-    padding: 15% 0 8% 0;
+    padding-bottom: 2%;
 }
 .form1 input{
-    width: 160%;
+    width: 100%;
     padding: 2%;
     border-radius: 5px ;
     border-style: solid;
 }
 .form2 input{
-    width: 160%;
+    width: 100%;
     padding: 2%;
     border-radius: 5px ;
     border-style: solid;
 }
 .form3 input{
-    width: 160%;
-    padding: 0 5% 20% 2%;
+    width: 100%;
+    padding: 0 5% 10% 2%;
     border-radius: 5px ;
     border-style: solid;
 }
@@ -267,25 +281,22 @@ header{
 .btn2{
     background-color: crimson;
     color: white;
-    width: 190px;
+    width: 240px;
     height: 45px;
     margin-top: 20px;
-    padding: 2% 10%;
     font-weight: 700;
     letter-spacing: 2px;
     cursor: pointer;
     border: 2px solid crimson;
     outline: none;
     border-radius: 6px;
-    transform: 0.3s;
+    transition: all 0.3s ease;
 }
 .btn2:hover{
     background: transparent;
     color: crimson;
 }
-footer strong{
-    color: crimson;
-}
+    /* Footer */
 footer{
     background-color: #111;
     display: flex;
@@ -295,4 +306,7 @@ footer{
     font-size: 20px;
     font-weight: 500;
     color: white;
+}
+footer strong{
+    color: crimson;
 }
