@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Poppins:wght@200;300&family=Ubuntu:wght@300&display=swap');
+
+@import './reset';
+@import './variables';
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 70px;
+    width: $mywidth;
+    padding: 0 5%;
+    background-color: $primary-color;
+    color: $text-color;
+
+    .logo {
+        font-size: map-get($font-size, logo);
+        font-weight: map-get($font-weight, bold);
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+
+    li {
+        margin: 0 5px;
+    }
+
+    a {
+        color: $text-color;
+        text-decoration: none;
+        font-size: map-get($font-size, text);
+        font-weight: map-get($font-weight, medium);
+        padding: 8px 15px;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+    }
+
+    a.active,
+    a:hover {
+        color: $accent-color;
+    }
+
+    .menu-btn i {
+        font-size: map-get($font-size, icon);
+        display: none;
+        cursor: pointer;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+}
+
+// Home
+
+.home {
+    @include flex-align(flex, center);
+    @include background(url('../image/background.jpg'), center, cover, no-repeat);
+    height: $myheight;
+
+    .home-content {
+        font-size: map-get($font-size, logo);
+        @include align-justify(center, center);
+    }
+
+    .home-content strong {
+        color: $accent-color;
+    }
+
+    .home-btn {
+        background-color: $accent-color;
+        color: $text-color;
+        margin-top: 30px;
+        padding: 2% 10%;
+        font-weight: map-get($font-weight, bold);
+        border: 2px solid $accent-color;
+        @include button;
+    }
+
+    .home-btn:hover {
+        background: transparent;
+        color: $accent-color;
+    }
+}
+
+    // About
+
+    .about-heading{
+        text-align: center;
+    }
+    .about-heading h1{
+        font-size: 40px;
+    }
+    .about-heading p{
+        font-size: map-get($font-size, text );
+        color: $accent-color;
+    }
+    .about-me{
+        display: $flex;
+    }
+    .about-me-image{
+      flex: 1;
+    }
+    .about-me-text{
+        flex: 2;
+        display: $flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-me-text h5{
+        font-size: map-get($font-size, text );
+    }
+    .about-me-text p{
+        font-size: map-get($font-size, text );
+        text-align: justify;
+        padding-top: 20px;
+    }
+    
+    .about-btn{
+        background-color: $accent-color;
+        color: $text-color;
+        margin-top: 30px;
+        padding: 2% 10%;
+        font-weight: map-get($font-weight, bold );
+        border: 2px solid $accent-color;
+        letter-spacing: 2px;
+       @include button;
+    }
+    .about-btn:hover{
+        background: transparent;
+        color: $accent-color;
+    }
+        
+
+    // services
+
+    
+.services{
+    background-color: $primary-color;
+    color: $text-color;
+    .services i{
+      font-size:4rem ;
+      padding: 10% 0 20px 40%;
+    }
+    .services-heading{
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    .services-content{
+        display: $flex;
+        padding: 0 4%;
+    }
+    .services-box h2{
+        text-align: center;
+        padding-bottom: 5px;
+    }
+    .services-box{
+       margin: 10px;
+       padding: 15px;
+       background-color: #222;
+       border-radius: 5px;
+       transition: all 0.3s ease;
+    }
+    .services-box i {
+        color: $text-color;
+    }
+    .services-box:hover{
+        background-color: $accent-color;
+        color: $primary-color;
+    }
+}
+
+
+    // contacts
+
+
+    .contacts i {
+        color: $accent-color;
+    }
+    .contacts-heading h2{
+        font-size: 40px;
+    }
+    .contacts-heading p {
+        font-size: map-get($font-size, icon );
+        color: $accent-color;
+    }
+    .contacts-heading{
+        text-align: center;
+    }
+    .contacts-column{
+        display: $flex;
+        font-size: 18px;
+        @include align-justify(center, space-between);
+    }
+    .first-row h4{
+        font-size: map-get($font-size,icon );
+    }
+    .first-row{
+        align-items: center;
+        padding: 10px;
+    }
+    .second-row{
+        display: $flex;
+        padding: 3%;
+    }
+    .second-row i{
+        padding-top: 3%;
+        font-size: map-get($font-size,icon );
+    }
+    .third-row{
+        display: $flex;
+        padding: 3%;
+    }
+    .third-row i{
+        padding-top: 3%;
+        font-size: map-get($font-size,icon );
+    }
+    .fourth-row{
+        display: $flex;
+        padding: 3%;
+    }
+    .fourth-row i{
+        padding-top: 3%;
+        font-size: map-get($font-size,icon );
+    }
+    .fifth-row{
+        font-size: 30px;
+    }
+    .row-content{
+        padding-left: 6%;
+    }
+    .form{
+        width: 50%;
+    }
+    .form h4{
+        font-size: map-get($font-size,icon );
+        padding-bottom: 2%;
+    }
+    .first-form input{
+        width: 100%;
+        padding: 2%;
+        border-radius: 5px ;
+        border-style: solid;
+    }
+    .first-form{
+        padding-bottom: 30px;
+    }
+    .second-form input{
+        width: 100%;
+        padding: 2%;
+        border-radius: 5px ;
+        border-style: solid;
+    }
+    .second-form{
+        padding-bottom: 30px;
+    }
+    .third-form input{
+        width: 100%;
+        padding: 0 5% 10% 2%;
+        border-radius: 5px ;
+        border-style: solid;
+    }
+    .contacts-btn{
+        background-color: $accent-color;
+        color: $text-color;
+        width: 240px;
+        height: 45px;
+        margin-top: 20px;
+        font-weight: map-get($font-weight, bold );
+        @include button;
+    }
+    .contacts-btn:hover{
+        background: transparent;
+        color: $accent-color;
+    }
+    
+
+    // Footer
+
+    footer{
+        background-color: $primary-color;
+        display: $flex;
+        @include align-justify(center, center);
+        padding: 20px;
+        font-size: map-get($font-size, text );
+        font-weight: map-get($font-weight, medium );
+        color: $text-color;
+    }
+    footer strong{
+        color: $accent-color;
+    }

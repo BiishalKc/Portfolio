@@ -1,0 +1,43 @@
+$primary-color: #111;
+$text-color: white;
+$accent-color: crimson;
+$font-size:(
+    "logo": 35px,
+    "text": 20px,
+    "icon": 25px
+);
+$font-weight:(
+    "medium":500,
+    "bold":700
+);
+$mywidth: 100%;
+$myheight: 100vh;
+$flex: flex;
+
+
+@mixin background($image, $postion, $size, $repeat){
+    background-image: $image;
+    background-position: $postion;
+    background-size: $size;
+    background-repeat: $repeat;
+}
+
+@mixin flex-align($display, $align){
+    display: $display;
+    align-items: $align;
+}
+
+@mixin align-justify($align, $justify){
+    align-self:$align ;
+    justify-content: $justify;
+}
+
+@mixin button {
+    cursor: pointer;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+
