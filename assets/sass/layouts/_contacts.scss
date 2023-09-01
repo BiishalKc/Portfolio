@@ -1,0 +1,45 @@
+
+.contacts i {
+    color: $accent-color;
+  }
+  
+  .contacts-heading p {
+    font-size: map-get($font-size, icon );
+    color: $accent-color;
+  }
+  
+  .contacts-heading {
+    text-align: center;
+  }
+  
+  .contacts-column {
+    font-size: 18px;
+    align-self: center;
+    justify-content: space-between;
+  }
+  
+  .first-row h3 {
+    font-size: map-get($font-size, icon );
+    padding-bottom: 10px;
+  }
+  
+  .row-padding {
+    padding: 3%;
+  }
+  
+  .row-icon-padding {
+    padding-top: 3%;
+    font-size: map-get($font-size, icon );
+  }
+  
+  .fifth-row {
+    font-size: 30px;
+  }
+  .fifth-row i {
+    padding-right: 2%;
+  }
+  
+  .row-content {
+    padding-left: 6%;
+  }
+  

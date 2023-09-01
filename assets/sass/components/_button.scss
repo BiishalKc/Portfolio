@@ -1,0 +1,9 @@
+.btn {
+    @include button;
+}
+
+.btn:hover {
+    background: transparent;
+    color: $accent-color;
+}
+

@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper-class {
+  padding: 0 5%;
+}
+
+.mid-padding {
+  padding: 30px 0;
+}
+
+.bottom-padding {
+  padding-bottom: 40px;
+}
+
+.flex, footer, .fourth-row, .third-row, .second-row, .contacts-column, .services-content, .about-me-text, .about-me {
+  display: flex;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.btn {
+  background-color: crimson;
+  color: white;
+  margin-top: 30px;
+  padding: 1% 5%;
+  font-weight: 700;
+  border: 2px solid crimson;
+  cursor: pointer;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 6px;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: transparent;
+  color: crimson;
+}
+
+.form {
+  width: 50%;
+}
+
+.form h3 {
+  font-size: 25px;
+  padding: 10% 0 3% 0;
+}
+
+.first-form input {
+  width: 100%;
+  padding: 2%;
+  border-radius: 5px;
+  border-style: solid;
+}
+
+.first-form {
+  padding-bottom: 30px;
+}
+
+.second-form input {
+  width: 100%;
+  padding: 2%;
+  border-radius: 5px;
+  border-style: solid;
+}
+
+.second-form {
+  padding-bottom: 30px;
+}
+
+.third-form input {
+  width: 100%;
+  padding: 2% 5% 10% 2%;
+  border-radius: 5px;
+  border-style: solid;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 70px;
+  width: 100%;
+  padding: 0 5%;
+  background-color: #111;
+  color: white;
+}
+nav .evit-logo {
+  font-size: 40px;
+  font-weight: 700;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav li {
+  margin: 0 5px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 8px 15px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav a.active,
+nav a:hover {
+  color: crimson;
+}
+nav .menu-btn i {
+  font-size: 25px;
+  display: none;
+  cursor: pointer;
+}
+nav input[type=checkbox] {
+  display: none;
+}
+
+.evit-home {
+  display: flex;
+  align-items: center;
+  background-image: url("../image/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.evit-home .evit-home-content {
+  font-size: 40px;
+  align-self: center;
+  justify-content: center;
+}
+.evit-home .evit-home-content strong {
+  color: crimson;
+}
+
+.about-heading {
+  text-align: center;
+}
+
+.about-heading p {
+  font-size: 20px;
+  color: crimson;
+}
+
+.about-me-image {
+  flex: 1;
+}
+
+.about-me-text {
+  flex: 2;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-me-text h3 {
+  font-size: 20px;
+}
+
+.about-me-text p {
+  font-size: 20px;
+  text-align: justify;
+  padding-top: 20px;
+}
+
+.services {
+  background-color: #111;
+  color: white;
+}
+.services .services-heading {
+  text-align: center;
+}
+.services .services-content {
+  padding: 0 4%;
+}
+.services .services-box {
+  margin: 10px;
+  padding: 15px;
+  background-color: #222;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.services .services-box h3 {
+  text-align: center;
+  padding-bottom: 5px;
+  font-size: 25px;
+}
+.services .services-box p {
+  text-align: center;
+  font-size: 20px;
+}
+.services .services-box i {
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  margin: 20px 0;
+}
+.services .services-box:hover {
+  background-color: crimson;
+  color: #111;
+}
+
+.contacts i {
+  color: crimson;
+}
+
+.contacts-heading p {
+  font-size: 25px;
+  color: crimson;
+}
+
+.contacts-heading {
+  text-align: center;
+}
+
+.contacts-column {
+  font-size: 18px;
+  align-self: center;
+  justify-content: space-between;
+}
+
+.first-row h3 {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.row-padding {
+  padding: 3%;
+}
+
+.row-icon-padding {
+  padding-top: 3%;
+  font-size: 25px;
+}
+
+.fifth-row {
+  font-size: 30px;
+}
+
+.fifth-row i {
+  padding-right: 2%;
+}
+
+.row-content {
+  padding-left: 6%;
+}
+
+footer {
+  background-color: #111;
+  align-self: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+footer a {
+  color: crimson;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1200px) {
+  .about-me {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about-me-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-me-text h3 {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .about-me-text h3 p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .about-me-button {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  nav {
+    position: fixed;
+  }
+  nav .menu-btn i {
+    display: block;
+  }
+  nav ul {
+    position: fixed;
+    top: 69px;
+    left: -100%;
+    background: rgb(53, 52, 52);
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  nav li {
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav a {
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s;
+  }
+  nav #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+  nav #click:checked ~ ul {
+    left: 0px;
+  }
+  nav #click:checked ~ ul li a {
+    margin-left: 0px;
+  }
+  .evit-home-content h1 {
+    font-size: 50px;
+  }
+  .about-me-text h3 {
+    font-size: 18px;
+  }
+  .services-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contacts-column {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .form {
+    padding-top: 10%;
+    width: 100%;
+  }
+  footer {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */

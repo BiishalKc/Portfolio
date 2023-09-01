@@ -1,0 +1,50 @@
+nav {
+    @include display-align(flex, center);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 70px;
+    width: 100%;
+    padding: 0 5%;
+    background-color: $primary-color;
+    color: $text-color;
+
+    .evit-logo {
+        font-size: map-get($font-size , logo);
+        font-weight: map-get($font-weight, bold);
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+
+    li {
+        margin: 0 5px;
+    }
+
+    a {
+        color: $text-color;
+        text-decoration: none;
+        font-size: map-get($font-size, text);
+        font-weight: map-get($font-weight, medium);
+        padding: 8px 15px;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+    }
+
+    a.active,
+    a:hover {
+        color: $accent-color;
+    }
+
+    .menu-btn i {
+        font-size: map-get($font-size, icon);
+        display: none;
+        cursor: pointer;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+}

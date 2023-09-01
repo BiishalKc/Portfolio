@@ -1,0 +1,15 @@
+.evit-home {
+    @include display-align(flex, center);
+    @include background(url('../image/background.jpg'), center, cover, no-repeat);
+    height: 100vh;
+
+    .evit-home-content {
+        font-size: map-get($font-size, logo);
+        @include align-justify(center, center);
+    }
+
+    .evit-home-content strong {
+        color: $accent-color;
+    }
+
+}

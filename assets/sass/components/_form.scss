@@ -1,0 +1,37 @@
+.form {
+    width: 50%;
+}
+
+.form h3 {
+    font-size: map-get($font-size, icon);
+    padding: 10% 0 3% 0;
+}
+
+.first-form input {
+    width: 100%;
+    padding: 2%;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.first-form {
+    padding-bottom: 30px;
+}
+
+.second-form input {
+    width: 100%;
+    padding: 2%;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.second-form {
+    padding-bottom: 30px;
+}
+
+.third-form input {
+    width: 100%;
+    padding: 2% 5% 10% 2%;
+    border-radius: 5px;
+    border-style: solid;
+}

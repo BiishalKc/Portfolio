@@ -1,0 +1,13 @@
+footer {
+    background-color: $primary-color;
+    @include align-justify(center, center);
+    padding: 20px;
+    font-size: map-get($font-size, text);
+    font-weight: map-get($font-weight, medium);
+    color: $text-color;
+
+    a {
+        color: $accent-color;
+        text-decoration: none;
+    }
+}
