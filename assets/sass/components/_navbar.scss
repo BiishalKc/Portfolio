@@ -8,12 +8,12 @@ nav {
     background-color: $primary-color;
     color: $text-color;
 
-    .evit-logo {
+    .my-logo {
         font-size: map-get($font-size , logo);
         font-weight: map-get($font-weight, bold);
     }
 
-    ul {
+     ul {
         display: flex;
         flex-wrap: wrap;
         list-style: none;

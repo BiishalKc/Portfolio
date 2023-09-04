@@ -57,29 +57,25 @@ h2 {
 .first-form input {
   width: 100%;
   padding: 2%;
-  border-radius: 5px;
+  border-radius: 6px;
   border-style: solid;
 }
 
-.first-form {
+.first-form, .second-form {
   padding-bottom: 30px;
 }
 
 .second-form input {
   width: 100%;
   padding: 2%;
-  border-radius: 5px;
+  border-radius: 6px;
   border-style: solid;
-}
-
-.second-form {
-  padding-bottom: 30px;
 }
 
 .third-form input {
   width: 100%;
   padding: 2% 5% 10% 2%;
-  border-radius: 5px;
+  border-radius: 6px;
   border-style: solid;
 }
 
@@ -94,7 +90,7 @@ nav {
   background-color: #111;
   color: white;
 }
-nav .evit-logo {
+nav .my-logo {
   font-size: 40px;
   font-weight: 700;
 }
@@ -128,7 +124,7 @@ nav input[type=checkbox] {
   display: none;
 }
 
-.evit-home {
+.my-home {
   display: flex;
   align-items: center;
   background-image: url("../image/background.jpg");
@@ -137,12 +133,23 @@ nav input[type=checkbox] {
   background-repeat: no-repeat;
   height: 100vh;
 }
-.evit-home .evit-home-content {
+.my-home .my-home-content {
   font-size: 40px;
   align-self: center;
   justify-content: center;
 }
-.evit-home .evit-home-content strong {
+.my-home .my-home-content strong {
+  color: crimson;
+}
+.my-home .my-icon {
+  font-size: 30px;
+  padding: 5% 0;
+}
+.my-home .my-icon i {
+  padding-right: 10px;
+  cursor: pointer;
+}
+.my-home .my-icon i:hover {
   color: crimson;
 }
 
@@ -228,7 +235,6 @@ nav input[type=checkbox] {
 
 .contacts-column {
   font-size: 18px;
-  align-self: center;
   justify-content: space-between;
 }
 
@@ -238,7 +244,7 @@ nav input[type=checkbox] {
 }
 
 .row-padding {
-  padding: 3%;
+  padding: 3% 3% 3% 0;
 }
 
 .row-icon-padding {
@@ -272,7 +278,6 @@ footer a {
   text-decoration: none;
 }
 
-/* Responsive */
 @media only screen and (max-width: 1200px) {
   .about-me {
     display: flex;
@@ -337,8 +342,8 @@ footer a {
   nav #click:checked ~ ul li a {
     margin-left: 0px;
   }
-  .evit-home-content h1 {
-    font-size: 50px;
+  .my-home-content h1 {
+    font-size: 45px;
   }
   .about-me-text h3 {
     font-size: 18px;

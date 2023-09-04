@@ -8,30 +8,20 @@
 }
 
 .first-form input {
-    width: 100%;
-    padding: 2%;
-    border-radius: 5px;
-    border-style: solid;
+    @include input;
 }
 
-.first-form {
+.first-form, .second-form {
     padding-bottom: 30px;
 }
 
 .second-form input {
-    width: 100%;
-    padding: 2%;
-    border-radius: 5px;
-    border-style: solid;
-}
-
-.second-form {
-    padding-bottom: 30px;
+    @include input;
 }
 
 .third-form input {
     width: 100%;
     padding: 2% 5% 10% 2%;
-    border-radius: 5px;
+    border-radius: 6px;
     border-style: solid;
 }
