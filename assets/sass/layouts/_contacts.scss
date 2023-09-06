@@ -1,5 +1,5 @@
 
-.contacts i {
+.portfolio-contacts i {
     color: $accent-color;
   }
   
@@ -23,7 +23,7 @@
   }
   
   .row-padding {
-    padding: 3% 3% 3% 0;
+    padding: 3% 3% 0 0;
   }
   
   .row-icon-padding {
@@ -31,6 +31,10 @@
     font-size: map-get($font-size, icon );
   }
   
+  .fourth-row a {
+    text-decoration: none;
+    color: $primary-color;
+  }
   .fifth-row {
     font-size: 30px;
   }

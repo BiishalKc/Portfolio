@@ -39,7 +39,8 @@
     width: 100%;
     padding: 2%;
     border-radius: 6px;
-    border-style: solid;
+    border-style: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 
 footer, .fourth-row, .third-row, .second-row, .contacts-column, .services-content, .about-me-text, .about-me  {

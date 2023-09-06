@@ -17,12 +17,13 @@
 
         p {
             @include display-justify(flex, center);
-            text-align: center;
+            text-align: justify;
         }
     }
 
-    .about-me-button {
+    .about-me-button a{
         @include display-justify(flex, center);
+        text-decoration: none;
     }
 }
 
@@ -75,7 +76,7 @@
 
 
 
-    .my-home-content h1{
+    .portfolio-home-content h1{
         font-size: 45px;
     }
 
@@ -96,7 +97,7 @@
         flex-direction: column;
     }
 
-    .form {
+    .portfolio-form {
         padding-top: 10%;
         width: 100%;
     }

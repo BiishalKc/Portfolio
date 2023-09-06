@@ -1,8 +1,8 @@
-.form {
+.portfolio-form {
     width: 50%;
 }
 
-.form h3 {
+.portfolio-form h3 {
     font-size: map-get($font-size, icon);
     padding: 10% 0 3% 0;
 }
@@ -23,5 +23,6 @@
     width: 100%;
     padding: 2% 5% 10% 2%;
     border-radius: 6px;
-    border-style: solid;
+    border-style: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }

@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="assets/css/output.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Poppins:wght@200;300&family=Ubuntu:wght@300&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Poppins:wght@200;300&family=Ubuntu:wght@300&display=swap">
     <script src="https://kit.fontawesome.com/989a8c9daf.js" crossorigin="anonymous"></script>
     <title>Portfolio</title>
 </head>
 
 <body>
 
+    <a href="#portfolio-navbar"><div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div></a>
     <!-- Header -->
 
     <header>
-        <nav>
+        <nav id="portfolio-navbar">
             <div class="my-logo">Bishal</div>
             <input type="checkbox" id="click">
             <label for="click" class="menu-btn">
@@ -30,44 +32,40 @@
                 <li><a href="#contacts">Contacts</a></li>
             </ul>
         </nav>
-        </div>
     </header>
 
     <!-- Home -->
 
-    <section id="home" class="my-home">
-        <div class="my-home-content wrapper-class bottom">
+    <section id="home" class="portfolio-home">
+        <div class="portfolio-home-content wrapper-class bottom">
             <h1>Hi,<br> I am <strong> Bishal Kc, </strong> Web Designer</h1>
-            <button class="btn">Contact</button>
+            <a href="#contacts"><button class="btn"> Contact</button></a> 
             <div class="my-icon">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-linkedin"></i>
+                <a href="https://www.facebook.com/bishal.kc.94214"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/b_ishal_kc/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/BiishalKc"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/bishal-kc-7b640b28b/"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
     </section>
 
     <!-- About -->
 
-    <section id="about" class="about bottom-padding">
-        <div class="about-heading mid-padding">
+    <section id="about" class="portfolio-about bottom-padding">
+        <div class="portfolio-about-heading mid-padding">
             <h2>About me </h2>
             <p>-who i am-</p>
         </div>
         <div class="about-me wrapper-class">
             <div class="about-me-image">
-                <img src="assets/image/img.jpg" height="500vh" alt="">
+                <img src="assets/image/my-image.jpg" 
+                height="300vh">
             </div>
             <div class="about-me-text">
                 <h3>I am Bishal Kc and I'm a web designer</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum alias officiis hic eum nulla,
-                    itaque, modi inventore quod maiores labore magnam porro atque doloribus dicta laborum corrupti?
-                    Natus optio, consequatur laborum neque quas impedit consequuntur voluptatem error necessitatibus
-                    enim reiciendis, illo repellendus iusto ipsa quasi! Dolor, dignissimos et inventore maxime delectus
-                    optio odit odio magni.</p>
+                <p>As a web designer, I have expertise in HTML, CSS and basic wordpress. I joined Eagle Vision It as a junior frontend developer in September 2022 and I have been working on various web projects using PHP and other web technologies. I love creating websites that are fast, responsive and user-friendly.</p>
                 <div class="about-me-button">
-                    <button class="btn">Download CV</button>
+                   <a href="/assets/cv/Bishal-CV.pdf" download="Bishal-CV"><button class="btn">Download CV</button></a> 
                 </div>
             </div>
         </div>
@@ -75,7 +73,7 @@
 
     <!-- services -->
 
-    <section id="services" class="services bottom-padding">
+    <section id="services" class="portfolio-services bottom-padding">
         <div class="services-heading mid-padding">
             <h2>My Services</h2>
         </div>
@@ -83,27 +81,24 @@
             <div class="services-box">
                 <i class="fa-solid fa-paintbrush"></i>
                 <h3>Web Development</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, quaerat deserunt debitis nobis
-                    sapiente enim!</p>
+                <p>Building websites that suit your specific needs and goals with quality and efficiency.</p>
             </div>
             <div class="services-box">
                 <i class="fa-brands fa-wordpress"></i>
                 <h3>Wordpress</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, quaerat deserunt debitis nobis
-                    sapiente enim!</p>
+                <p>Designing and developing websites using the popular Wordpress platform and its features.!</p>
             </div>
             <div class="services-box">
                 <i class="fa-solid fa-chart-line"></i>
                 <h3>Free Lancer</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, quaerat deserunt debitis nobis
-                    sapiente enim!</p>
+                <p>A self-employed professional who offers services to clients online.</p>
             </div>
         </div>
     </section>
 
     <!-- Contacts -->
 
-    <section id="contacts" class="contacts bottom-padding">
+    <section id="contacts" class="portfolio-contacts bottom-padding">
         <div class="contacts-heading mid-padding">
             <h2>Contact Me</h2>
             <p>-get in touch-</p>
@@ -112,9 +107,7 @@
             <div class="column-left">
                 <div class="first-row row-padding">
                     <h3>Get in Touch</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing<br> elit. Quasi, molestias facere? Tempore ab
-                        eius
-                        esse neque</p>
+                    <p>If you like what you see and want to collaborate on a project, feel  free <br>to contact me via email or social media. I’m always open to  new opportunities and challenges.</p>
                 </div>
                 <div class="second-row row-padding">
                     <i class="fa-solid fa-user row-icon-padding"></i>
@@ -134,17 +127,17 @@
                     <i class="fa-solid fa-envelope row-icon-padding"></i>
                     <div class="row-content">
                         <h4>Email</h4>
-                        <p>bkc1326@gmail.com</p>
+                        <a href="mailto: bkc1326@gmail.com"><p>bkc1326@gmail.com</p></a>
                     </div>
                 </div>
                 <div class="fifth-row row-padding">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://www.facebook.com/bishal.kc.94214"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/b_ishal_kc/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/BiishalKc"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/bishal-kc-7b640b28b/"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
-            <div class="form">
+            <div class="portfolio-form">
                 <h3>Message Me</h3>
                 <form class="contact-form">
                     <div class="first-form">
@@ -161,7 +154,7 @@
                     </div>
                 </form>
                 <div class="contacts-submit-btn">
-                    <button class="btn">Send message</button>
+                    <a href="mailto: bkc1326@gmail.com"><button class="btn">Send message</button></a>
                 </div>
             </div>
         </div>
@@ -170,7 +163,7 @@
     <!-- Footer -->
 
     <footer>
-        <p>Created By <strong> <a href="#home">Bishal Kc</a> </strong> | &copy;2023 All rights reserved.<NAME>
+        <p>Created By <strong> <a href="#my-navbar">Bishal Kc</a> </strong> | &copy;2023 All rights reserved.<NAME>
         </p>
     </footer>
 </body>

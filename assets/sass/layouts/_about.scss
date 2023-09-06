@@ -1,29 +1,37 @@
-.about-heading {
+.portfolio-about-heading {
     text-align: center;
 }
 
-.about-heading p {
+.portfolio-about-heading p {
     font-size: map-get($font-size, text);
     color: $accent-color;
 }
 
 
 .about-me-image {
-    flex: 1;
+    flex: 1.5;
+    img{
+        border-radius: 10px;
+        height: 350px;
+    }
 }
 
 .about-me-text {
     flex: 2;
     flex-direction: column;
     justify-content: center;
-}
+    
+     h3 {
+        font-size: map-get($font-size, text);
+    }
 
-.about-me-text h3 {
-    font-size: map-get($font-size, text);
+    p {
+        font-size: map-get($font-size, text);
+        text-align: justify;
+        padding-top: 20px;
+    }
 }
-
-.about-me-text p {
-    font-size: map-get($font-size, text);
-    text-align: justify;
-    padding-top: 20px;
+.about-me-button a{
+    width: 100%;
+    text-decoration: none;
 }

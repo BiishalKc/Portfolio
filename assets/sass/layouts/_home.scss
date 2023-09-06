@@ -1,15 +1,18 @@
-.my-home {
+.portfolio-home {
     @include display-align(flex, center);
     @include background(url('../image/background.jpg'), center, cover, no-repeat);
     height: 100vh;
 
-    .my-home-content {
+    .portfolio-home-content {
         font-size: map-get($font-size, logo);
         @include align-justify(center, center);
     }
 
-    .my-home-content strong {
+    .portfolio-home-content strong {
         color: $accent-color;
+    }
+    a{
+        text-decoration: none;
     }
     .my-icon{
         font-size: 30px;
@@ -20,6 +23,10 @@
         }
         i:hover{
             color: $accent-color;
+        }
+        a{
+            text-decoration: none;
+            color: $primary-color;
         }
     }
 }
